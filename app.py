@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/webhookjotForm',methods=['POST','GET'])
 def get_api():
-    if(request.method == "POST"):
+    if(request.method == "POST" or request.method == "GET"):
         print(request.form)
     return "got it"
 
